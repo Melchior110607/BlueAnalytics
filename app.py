@@ -286,7 +286,7 @@ def show_report_analysis():
 
         with st.spinner("Analyse du rapport en cours..."):
             try:
-                client = OpenAI(api_key=st.secrets("OPENAI_API_KEY"))
+                client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
                 # Préparation du contenu
                 file_bytes = uploaded_file.read() if uploaded_file else None
