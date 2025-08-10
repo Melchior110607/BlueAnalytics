@@ -13,7 +13,7 @@ def log_web_search(message):
 class CompanyAnalyzer:
     def __init__(self):
         """Initialisation de l'analyseur d'entreprises"""
-        self.api_key = st.secrets('OPENAI_API_KEY')
+        self.api_key = st.secrets['OPENAI_API_KEY']
         if not self.api_key:
             raise ValueError("Clé API OpenAI non configurée")
         
